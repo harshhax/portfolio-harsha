@@ -30,7 +30,7 @@ export default function Contact() {
       <form onSubmit={sendEmail}>
         <input type="text" name="name" placeholder="Name" required />
         <input type="email" name="email" placeholder="Email" required />
-        <textarea name="message" rows="4" placeholder="Message" required />
+        <textarea name="message" rows="4" placeholder="Let me know how can I help you..." required />
 
         <button type="submit" className="btn">Send</button>
       </form>

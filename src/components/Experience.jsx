@@ -4,43 +4,52 @@ export default function Experience() {
 
       <h2>Experience</h2>
 
-      <div className="experience-card">
-        <h3>Frontend Developer Intern</h3>
+      <div className="experience-glass-card">
 
-        <p className="experience-meta">
-          Crayond Digital Pvt. Ltd. | Mar 2025 – Jul 2025
-        </p>
+        {/* TOP ROW */}
+        <div className="experience-header">
+          <div>
+            <span className="company-badge">CRAYON'D SOFTWARE</span>
+            <h3 className="role-title">Frontend Web Developer</h3>
+          </div>
 
-        <ul className="experience-points">
+          <span className="experience-date">
+            MAR 2025 – JUN 2025 · BIT SATHY, INDIA
+          </span>
+        </div>
+
+        {/* RESPONSIBILITIES */}
+        <h4 className="experience-subtitle">KEY RESPONSIBILITIES</h4>
+
+        <ul className="experience-list">
           <li>
-            Built <strong>15+ reusable and responsive UI components</strong>
-            using React.js and Next.js, improving code maintainability and
-            development speed.
+            Built responsive, user-friendly marketing pages and UI components
+            using <strong>Next.js, React, and Tailwind CSS</strong>.
           </li>
           <li>
-            Optimized state management and component integration to enhance
-            <strong> UI performance and scalability</strong> across applications.
+            Collaborated with senior developers on production releases, code
+            reviews, and deployment processes.
+          </li>
+          <li>
+            Developed and integrated <strong>Node.js and Express APIs</strong>
+            with validation, logging, and basic testing workflows.
+          </li>
+          <li>
+            Gained hands-on exposure to full-stack development including CI
+            pipelines, version control, and observability practices.
           </li>
         </ul>
-      </div>
 
-      <h2 className="mt-large">Certifications & Accomplishments</h2>
-
-      <div className="achievement-grid">
-
-        <div className="achievement-card">
-          <span className="achievement-dot"></span>
-          UI/UX Design Certification – Maiyyam
-        </div>
-
-        <div className="achievement-card">
-          <span className="achievement-dot"></span>
-          Full Stack Development Program – Maiyyam
-        </div>
-
-        <div className="achievement-card">
-          <span className="achievement-dot"></span>
-          Qualified for Semi-Finals, Smart India Hackathon – Oct 2025
+        <h4 className="experience-subtitle">SKILLS LEARNT</h4>
+        {/* SKILLS */}
+        <div className="experience-skills">
+          <span>Next.js</span>
+          <span>React.js</span>
+          <span>Tailwind CSS</span>
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>API Development</span>
+          <span>Git & GitHub</span>
         </div>
 
       </div>
