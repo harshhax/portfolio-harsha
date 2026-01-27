@@ -328,13 +328,6 @@ input, textarea {
   background: #0b0f1a;
 }
 
-/* subtle floating effect */
-@keyframes avatarFloat {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-}
-
 /* mobile friendly */
 @media (max-width: 768px) {
   .hero-center-avatar {
@@ -481,17 +474,6 @@ input, textarea {
 }
 
 /* ---------- INTERACTIVE SKILL CARDS ---------- */
-
-.skill-card {
-  padding: 16px 18px;
-  border-radius: 14px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
-  transition: 0.35s ease;
-  position: relative;
-  overflow: hidden;
-}
-
 /* header */
 .skill-header {
   display: flex;
@@ -563,6 +545,7 @@ input, textarea {
   overflow: hidden;
   padding: 0 16px;
 }
+
 
 /* HEADER CENTERED INITIALLY */
 .skill-header {
