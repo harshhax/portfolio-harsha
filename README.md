@@ -1,70 +1,123 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🌐 Personal Portfolio
 
-## Available Scripts
+A modern, responsive **frontend developer portfolio** built using **React.js**, showcasing projects, skills, experience, and contact information with a clean and interactive user interface.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* ⚡ **Responsive Design** – Optimized for desktop, tablet, and mobile
+* 🎨 **Modern UI/UX** – Clean layout with smooth animations
+* 🧑‍💻 **Projects Showcase** – Interactive project cards with hover effects
+* 📊 **Skills Section** – Visual skill indicators and progress bars
+* 🧭 **Experience & Education** – Timeline-based presentation
+* 📩 **Contact Form** – Netlify-enabled form (no backend required)
+* 🔗 **Social Links** – GitHub, LinkedIn, and Email integration
+* 🌙 **Dark Theme** – Professional, minimal, and visually consistent
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Frontend**
 
-### `npm run build`
+* React.js
+* JavaScript (ES6+)
+* HTML5
+* CSS3
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Libraries & Tools**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Framer Motion (animations)
+* React Icons
+* Git & GitHub
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Deployment**
 
-### `npm run eject`
+* Netlify
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📁 Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+client/
+├── public/
+│   ├── profile.png
+│   ├── resume.pdf
+│   └── index.html
+├── src/
+│   ├── components/
+│   ├── styles/
+│   ├── App.jsx
+│   └── index.js
+├── package.json
+└── README.md
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🚀 Getting Started (Local Setup)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Node.js installed
+* npm installed
 
-### Code Splitting
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+git clone https://github.com/harshhax/portfolio-harsha.git
+cd portfolio-harsha/client
+npm install
+npm start
+```
 
-### Analyzing the Bundle Size
+The app will run at:
+👉 `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📦 Build for Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm run build
+```
 
-### Advanced Configuration
+Creates an optimized production build in the `build/` folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🌍 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This portfolio is deployed using **Netlify**.
 
-### `npm run build` fails to minify
+* Frontend-only (no backend)
+* Netlify Forms used for contact submissions
+* Fast, secure, and cost-free hosting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 📬 Contact
+
+* **GitHub:** [https://github.com/harshhax](https://github.com/harshhax)
+* **LinkedIn:** [https://www.linkedin.com/in/harshaax/](https://www.linkedin.com/in/harshaax/)
+* **Email:** [harshha.srithar@gmail.com](mailto:harshha.srithar@gmail.com)
+
+---
+
+## 📄 License
+
+This project is for **personal portfolio use**.
+Feel free to explore and take inspiration, but please do not copy content directly.
+
+---
+
+## 🙌 Acknowledgements
+
+* React.js Documentation
+* Framer Motion
+* Netlify
+* Open-source community
+
