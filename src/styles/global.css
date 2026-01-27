@@ -1145,7 +1145,9 @@ input, textarea {
 
 .intro-name span {
   background: linear-gradient(90deg, #7c7cff, #ff4ecd);
+  background-clip: text;
   -webkit-background-clip: text;
+
   color: transparent;
   text-shadow: 0 0 20px rgba(124,124,255,0.6);
 }
