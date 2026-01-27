@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <h2>Harsha Varthini</h2>
+
 
 
 
