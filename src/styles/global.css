@@ -933,3 +933,74 @@ input, textarea {
     pointer-events: auto;
   }
 }
+
+/* ================= PROJECT LINKS ================= */
+
+.project-links {
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.project-links a {
+  font-size: 1.1rem;
+  color: #eaeaff;
+  transition: 0.3s ease;
+}
+
+.project-links a:hover {
+  color: #00f5ff;
+  transform: translateY(-3px);
+}
+
+/* ================= PROJECT BUTTON (THEME MATCH) ================= */
+
+/* ================= PROJECT BUTTON (CENTERED) ================= */
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 18px;
+  border-radius: 8px;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  color: #eaeaff;
+
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(0,245,255,0.35);
+
+  box-shadow: 0 0 12px rgba(0,245,255,0.25);
+
+  transition: 0.3s ease;
+
+  /* 👇 CENTER ALIGN */
+  margin: 0 auto;
+}
+
+
+/* hover = SAME AS EXPERIENCE */
+.project-btn:hover {
+  transform: translateY(-4px);
+
+  color: #00f5ff;
+
+  border-color: rgba(0,245,255,0.7);
+
+  box-shadow:
+    0 0 25px rgba(0,245,255,0.45),
+    0 0 40px rgba(124,124,255,0.4);
+}
+
+/* Center the project button inside card */
+.project-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+
