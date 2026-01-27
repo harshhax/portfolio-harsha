@@ -70,8 +70,10 @@ body {
   font-size: 2.6rem;
   margin-bottom: 25px;
   background: linear-gradient(90deg, #7c7cff, #00f5ff);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+
 }
 
 /* ---------- HERO ---------- */
@@ -87,8 +89,11 @@ body {
   font-family: 'Orbitron', sans-serif;
   font-size: 3.5rem;
   background: linear-gradient(90deg, #7c7cff, #ff4ecd);
+
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+
   margin-bottom: 12px;
 }
 
@@ -987,3 +992,377 @@ input, textarea {
 }
 
 
+/* ================= EDUCATION – MODERN TIMELINE ================= */
+
+.education-timeline {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* CARD */
+.education-card {
+  position: relative;
+  padding: 26px 32px 26px 80px;
+
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: 0.4s ease;
+}
+
+/* LEFT NUMBER CIRCLE */
+.education-index {
+  position: absolute;
+  left: 24px;
+  top: 28px;
+
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.95rem;
+  color: #0b0f1a;
+
+  background: linear-gradient(
+    135deg,
+    #7c7cff,
+    #00f5ff
+  );
+
+  box-shadow:
+    0 0 14px rgba(0,245,255,0.6),
+    0 0 28px rgba(124,124,255,0.5);
+}
+
+/* HEADER */
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.education-header h3 {
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+/* CGPA BADGE */
+.education-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+
+  color: #00f5ff;
+  background: rgba(0,245,255,0.1);
+  border: 1px solid rgba(0,245,255,0.35);
+}
+
+/* DEGREE */
+.education-degree {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* YEAR */
+.education-year {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  opacity: 0.65;
+}
+
+/* HOVER EFFECT */
+.education-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 0 30px rgba(0,245,255,0.25),
+    0 0 50px rgba(124,124,255,0.35);
+
+  border-color: rgba(0,245,255,0.5);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .education-card {
+    padding: 22px 22px 22px 70px;
+  }
+
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .education-badge {
+    margin-top: 6px;
+  }
+}
+
+/* ================= INTRO HERO STYLE ================= */
+
+.hero-intro {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.intro-wrapper {
+  max-width: 850px;
+}
+
+/* INTRO PILL */
+.intro-pill {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #cfd3ff;
+}
+
+/* NAME */
+.intro-name {
+  font-size: 3rem;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 8px;
+}
+
+.intro-name span {
+  background: linear-gradient(90deg, #7c7cff, #ff4ecd);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 20px rgba(124,124,255,0.6);
+}
+
+/* ROLE */
+.intro-role {
+  font-size: 1.1rem;
+  color: #00f5ff;
+  margin-bottom: 18px;
+}
+
+/* SKILL TAGS */
+.intro-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.intro-tags span {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #eaeaff;
+}
+
+/* DESCRIPTION */
+.intro-desc {
+  max-width: 700px;
+  line-height: 1.7;
+  color: #cfd3ff;
+  margin-bottom: 28px;
+}
+
+/* INFO CARDS */
+.intro-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.intro-card {
+  padding: 16px 18px;
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s ease;
+}
+
+.intro-card small {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  margin-bottom: 6px;
+}
+
+.intro-card p {
+  font-size: 0.95rem;
+}
+
+.intro-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(0,245,255,0.25);
+  border-color: rgba(0,245,255,0.5);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .intro-name {
+    font-size: 2.4rem;
+  }
+}
+
+
+/* ================= SKILLS SECTION ================= */
+
+.skills-cards-grid {
+  max-width: 1100px;          /* controls total width */
+  margin: 40px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ✅ 3 in one row */
+  gap: 20px;
+}
+
+/* ================= SKILL CARD ================= */
+
+.skills-card {
+  background: rgba(255, 255, 255, 0.035);
+  backdrop-filter: blur(14px);
+
+  border-radius: 18px;
+  padding: 18px 20px;        /* ⬅ smaller box */
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 22px rgba(0,245,255,0.25),
+    0 0 36px rgba(124,124,255,0.35);
+  border-color: rgba(0,245,255,0.45);
+}
+
+/* ================= CARD TITLE ================= */
+
+.skills-card h3 {
+  font-size: 1rem;
+  margin-bottom: 14px;
+  color: #eaeaff;
+}
+
+/* ================= PILLS (TOP TAGS) ================= */
+
+.skills-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.skills-pills span {
+  padding: 5px 12px;
+  font-size: 0.7rem;
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #cfd3ff;
+}
+
+/* ================= SKILL ROW ================= */
+
+.skill-row {
+  margin-bottom: 12px;
+}
+
+.skill-row:last-child {
+  margin-bottom: 0;
+}
+
+/* HEADER */
+.skill-row-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+  color: #cfd3ff;
+}
+
+/* BAR BACKGROUND */
+.skill-row-bar {
+  height: 5px;
+  border-radius: 5px;
+  background: rgba(255,255,255,0.14);
+  overflow: hidden;
+}
+
+/* BAR FILL */
+.skill-row-fill {
+  height: 100%;
+  border-radius: 5px;
+
+  background: linear-gradient(
+    90deg,
+    #00f5ff,
+    #7c7cff,
+    #ff4ecd
+  );
+
+  box-shadow: 0 0 8px rgba(0,245,255,0.45);
+  transition: width 0.7s ease;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .skills-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================= SKILL BAR COLORS BY CATEGORY ================= */
+
+/* Programming Languages – Purple → Pink */
+.skill-row-fill.pl {
+  background: linear-gradient(90deg, #7c7cff, #ff4ecd);
+  box-shadow: 0 0 8px rgba(124,124,255,0.6);
+}
+
+/* Frontend – Cyan → Blue */
+.skill-row-fill.frontend {
+  background: linear-gradient(90deg, #00f5ff, #4facfe);
+  box-shadow: 0 0 8px rgba(0,245,255,0.6);
+}
+
+/* Databases – Green → Teal */
+.skill-row-fill.database {
+  background: linear-gradient(90deg, #22c55e, #14b8a6);
+  box-shadow: 0 0 8px rgba(20,184,166,0.6);
+}
+
+/* UI / UX – Pink → Orange */
+.skill-row-fill.design {
+  background: linear-gradient(90deg, #ff4ecd, #f59e0b);
+  box-shadow: 0 0 8px rgba(245,158,11,0.6);
+}

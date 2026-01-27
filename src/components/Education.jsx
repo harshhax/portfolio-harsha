@@ -3,35 +3,41 @@ export default function Education() {
     <section id="education" className="section">
       <h2>Education</h2>
 
-      <div className="timeline">
+      <div className="education-timeline">
 
-        {/* COLLEGE */}
-        <div className="timeline-item">
-          <span className="timeline-dot"></span>
+        {/* ITEM 1 */}
+        <div className="education-card">
+          <div className="education-index">1</div>
 
-          <div className="timeline-content">
-            <h3>Bachelor of Computer Science and Design</h3>
-            <p className="timeline-meta">
-              Bannari Amman Institute of Technology | 2023 – 2027
+          <div className="education-content">
+            <div className="education-header">
+              <h3>Bannari Amman Institute of Technology, Sathyamangalam</h3>
+              <span className="education-badge">CGPA: 8.76</span>
+            </div>
+
+            <p className="education-degree">
+              Bachelor of Computer Science and Design
             </p>
-            <p>
-              CGPA: <strong>8.76</strong>
-            </p>
+
+            <p className="education-year">2023 – 2027</p>
           </div>
         </div>
 
-        {/* SCHOOL */}
-        <div className="timeline-item">
-          <span className="timeline-dot"></span>
+        {/* ITEM 2 */}
+        <div className="education-card">
+          <div className="education-index">2</div>
 
-          <div className="timeline-content">
-            <h3>Higher Secondary Education</h3>
-            <p className="timeline-meta">
-              Mahatma Montessori Hr. Sec. School, Madurai | 2023
+          <div className="education-content">
+            <div className="education-header">
+              <h3>Mahatma Montessori Hr. Sec. School, Madurai</h3>
+              <span className="education-badge">85%</span>
+            </div>
+
+            <p className="education-degree">
+              Higher Secondary Education
             </p>
-            <p>
-              Score: <strong>85%</strong>
-            </p>
+
+            <p className="education-year">2023</p>
           </div>
         </div>
 
