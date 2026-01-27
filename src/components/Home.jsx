@@ -34,7 +34,7 @@ export default function Home() {
         whileHover={{ scale: 1.05 }}
       >
         <div className="hero-side-avatar">
-          <img src="/profile.png" alt="Profile Avatar" />
+          <img src="/profile.jpg" alt="Profile Avatar" />
         </div>
 
         {/* MICRO SKILL TAGS */}
