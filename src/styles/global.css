@@ -1,0 +1,935 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at top, #12172b, #0b0f1a);
+  color: #eaeaff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15, 20, 40, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.navbar h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #7c7cff;
+  text-shadow: 0 0 10px #7c7cff;
+}
+
+.navbar a {
+  color: #eaeaff;
+  margin-left: 25px;
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -6px;
+  background: linear-gradient(90deg, #00f5ff, #ff4ecd);
+  transition: 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* ---------- SECTION ---------- */
+.section {
+  padding: 100px 8%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.section h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.6rem;
+  margin-bottom: 25px;
+  background: linear-gradient(90deg, #7c7cff, #00f5ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-text h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.5rem;
+  background: linear-gradient(90deg, #7c7cff, #ff4ecd);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 12px;
+}
+
+.hero-text h3 {
+  margin: 12px 0 18px;
+  color: #00f5ff;
+  line-height: 1.4;
+}
+
+.hero-text p {
+  max-width: 480px;
+  margin-bottom: 30px;
+  line-height: 1.7;
+  color: #cfd3ff;
+}
+
+
+/* ---------- BUTTON ---------- */
+.btn {
+  display: inline-block;   /* important */
+  margin-top: 10px;        /* spacing fix */
+  padding: 14px 35px;
+  border-radius: 8px;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(90deg, #7c7cff, #ff4ecd);
+  box-shadow: 0 0 20px rgba(124,124,255,0.6);
+  transition: 0.3s;
+}
+
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 35px rgba(0,245,255,0.8);
+}
+
+/* ---------- HERO IMAGE ---------- */
+.hero-img img {
+  width: 300px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  background:
+    linear-gradient(#0b0f1a, #0b0f1a) padding-box,
+    linear-gradient(135deg, #7c7cff, #00f5ff, #ff4ecd) border-box;
+  box-shadow: 0 0 40px rgba(124,124,255,0.7);
+}
+
+/* ---------- SKILLS ---------- */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tag {
+  padding: 10px 18px;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 0 15px rgba(0,245,255,0.2);
+  transition: 0.3s;
+}
+
+.tag:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #00f5ff;
+}
+
+/* ---------- SKILL PROGRESS BARS ---------- */
+/* ---------- NEAT COMPACT SKILL BARS ---------- */
+
+.skill-bar {
+  margin-bottom: 14px; /* compact spacing */
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  color: #eaeaff;
+}
+
+.skill-info span:last-child {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.bar-bg {
+  max-width: 90%;
+  height: 8px;                 /* ✅ neat size */
+  background: rgba(255,255,255,0.14);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 8px;
+
+  background: linear-gradient(
+    90deg,
+    #7c7cff,
+    #00f5ff,
+    #ff4ecd
+  );
+
+  box-shadow: 
+    0 0 8px rgba(124,124,255,0.45),
+    0 0 14px rgba(0,245,255,0.35);
+
+  transition: width 1.2s ease;
+}
+
+/* ---------- SKILLS GRID LAYOUT ---------- */
+
+/* ---------- SKILLS GRID (4 PER ROW) ---------- */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* ✅ 4 skills per row */
+  gap: 22px 36px;
+}
+
+/* Laptop / Tablet */
+@media (max-width: 1200px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+/* ---------- PROJECTS ---------- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: rgba(255,255,255,0.06);
+  border-radius: 18px;
+  padding: 25px;
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+
+  box-shadow: 
+  0 0 25px rgba(0,245,255,0.2),
+  0 0 40px rgba(124,124,255,0.3);
+
+
+  border-color: rgba(0,245,255,0.5);
+}
+
+
+/* ---------- CONTACT ---------- */
+form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 14px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/* ---------- CENTER CIRCULAR AVATAR (OG THEME) ---------- */
+
+.hero-center-avatar {
+  width: 220px;
+  height: 220px;
+  margin: 35px 0;
+  border-radius: 50%;
+  position: relative;
+
+  /* neon ring without touching bg */
+  background: linear-gradient(
+    135deg,
+    #7c7cff,
+    #00f5ff,
+    #ff4ecd
+  );
+
+  padding: 6px;
+
+  box-shadow:
+    0 0 25px rgba(124, 124, 255, 0.6),
+    0 0 45px rgba(0, 245, 255, 0.35);
+
+  animation: avatarFloat 6s ease-in-out infinite;
+}
+
+.hero-center-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+
+  /* keeps OG dark theme inside */
+  background: #0b0f1a;
+}
+
+/* subtle floating effect */
+@keyframes avatarFloat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* mobile friendly */
+@media (max-width: 768px) {
+  .hero-center-avatar {
+    width: 180px;
+    height: 180px;
+    margin: 30px auto;
+  }
+}
+
+/* ---------- HERO SIDE LAYOUT ---------- */
+.hero-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+/* ---------- SIDE AVATAR ---------- */
+.hero-side-avatar {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  padding: 6px;
+
+  background: linear-gradient(
+    135deg,
+    #7c7cff,
+    #00f5ff,
+    #ff4ecd
+  );
+
+  box-shadow:
+    0 0 30px rgba(124,124,255,0.7),
+    0 0 60px rgba(0,245,255,0.4);
+
+  animation: avatarFloat 6s ease-in-out infinite;
+}
+
+.hero-side-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #0b0f1a;
+}
+
+/* FLOATING ANIMATION */
+@keyframes avatarFloat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+  100% { transform: translateY(0); }
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .hero-side {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-side-avatar {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 30px;
+  }
+}
+
+/* ---------- EXPERIENCE SECTION ---------- */
+
+.experience-block {
+  margin-top: 25px;
+}
+
+.experience-block h3 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+}
+
+.experience-meta {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  margin-bottom: 12px;
+}
+
+.experience-block ul {
+  padding-left: 18px;
+}
+
+.experience-block ul li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* ---------- EDUCATION TIMELINE ---------- */
+
+.timeline {
+  position: relative;
+  margin-top: 40px;
+
+  
+
+  /* vertical line */
+  border-left: 2px solid rgba(255,255,255,0.25);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* DOT — perfectly centered on the line */
+.timeline-dot {
+  position: absolute;
+  left: -10px;          /* centers 18px dot on 2px line */
+  top: 0.35em;          /* aligns with heading text */
+
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    #7c7cff,
+    #00f5ff,
+    #ff4ecd
+  );
+  box-shadow: 0 0 15px rgba(0,245,255,0.7);
+}
+
+/* CONTENT */
+.timeline-content {
+  padding-left: 25px;
+}
+
+.timeline-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.timeline-meta {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  margin-bottom: 8px;
+}
+
+/* ---------- INTERACTIVE SKILL CARDS ---------- */
+
+.skill-card {
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* header */
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.skill-percent {
+  font-size: 0.85rem;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: 0.3s ease;
+}
+
+/* bar hidden by default */
+.skill-card .bar-bg {
+  margin-top: 12px;
+  height: 7px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.12);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: 0.35s ease;
+}
+
+.skill-card .bar-fill {
+  height: 100%;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    #7c7cff,
+    #00f5ff,
+    #ff4ecd
+  );
+  box-shadow: 0 0 12px rgba(0,245,255,0.6);
+}
+
+/* ---------- HOVER INTERACTION ---------- */
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,245,255,0.15);
+  border-color: rgba(124,124,255,0.4);
+}
+
+.skill-card:hover .bar-bg {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-card:hover .skill-percent {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= SMALL & NEAT SKILL CARDS ================= */
+.skill-card {
+  position: relative;
+  height: 95px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s ease;
+  overflow: hidden;
+  padding: 0 16px;
+}
+
+/* HEADER CENTERED INITIALLY */
+.skill-header {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.35s ease;
+}
+
+/* SKILL NAME */
+.skill-name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* PROGRESS % */
+.skill-percent {
+  font-size: 0.85rem;
+  color: #00f5ff;
+  opacity: 0;
+  transition: 0.35s ease;
+}
+
+/* PROGRESS BAR (HIDDEN BELOW, LEFT-ALIGNED) */
+.skill-card .bar-bg {
+  position: absolute;
+  bottom: 14px;
+  left: 16px;                 /* ✅ SAME START AS TEXT */
+  width: calc(100% - 32px);   /* padding-aware width */
+  height: 7px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.14);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.35s ease;
+}
+
+.skill-card .bar-fill {
+  height: 100%;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    #7c7cff,
+    #00f5ff,
+    #ff4ecd
+  );
+  box-shadow: 0 0 10px rgba(0,245,255,0.6);
+}
+
+/* ================= HOVER INTERACTION ================= */
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,245,255,0.18);
+  border-color: rgba(124,124,255,0.45);
+}
+
+/* MOVE HEADER TO SAME LEFT START */
+.skill-card:hover .skill-header {
+  justify-content: flex-start;
+  padding-left: 16px;        /* ✅ MATCH BAR START */
+}
+
+/* SHOW % */
+.skill-card:hover .skill-percent {
+  opacity: 1;
+}
+
+/* SHOW BAR */
+.skill-card:hover .bar-bg {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* spacing between skill category heading and skill boxes */
+.section h3 {
+  margin-top: 10px;
+  margin-bottom: 20px; /* 👈 controls gap between heading & boxes */
+}
+
+/* ================= OBJECTIVE (INTERACTIVE) ================= */
+
+.objective-card {
+  position: relative;
+  padding: 30px 35px;
+  max-width: 1000px;
+  line-height: 1.8;
+
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: 0.4s ease;
+  overflow: hidden;
+}
+
+/* glowing accent line */
+.objective-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    #7c7cff,
+    #00f5ff,
+    #ff4ecd
+  );
+  opacity: 0.8;
+}
+
+/* hover effect */
+.objective-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 40px rgba(0,245,255,0.25);
+  border-color: rgba(124,124,255,0.4);
+}
+
+/* text */
+.objective-card p {
+  color: #eaeaff;
+  font-size: 1.05rem;
+}
+
+/* keyword highlight */
+.highlight {
+  color: #00f5ff;
+  font-weight: 500;
+  position: relative;
+}
+
+/* subtle underline animation */
+.highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: #00f5ff;
+  transition: 0.3s ease;
+}
+
+.objective-card:hover .highlight::after {
+  width: 100%;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .objective-card {
+    padding: 24px;
+  }
+
+  .objective-card p {
+    font-size: 1rem;
+  }
+}
+
+
+/* ================= EXPERIENCE ================= */
+
+.experience-card {
+  margin-top: 25px;
+  padding: 28px 32px;
+  max-width: 1000px;
+
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.1);
+
+  position: relative;
+  transition: 0.4s ease;
+}
+
+/* accent bar */
+.experience-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    #7c7cff,
+    #00f5ff,
+    #ff4ecd
+  );
+  border-radius: 18px 0 0 18px;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 45px rgba(0,245,255,0.25);
+  border-color: rgba(124,124,255,0.4);
+}
+
+.experience-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+}
+
+.experience-meta {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  margin-bottom: 16px;
+}
+
+/* bullet points */
+.experience-points {
+  padding-left: 18px;
+}
+
+.experience-points li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* ================= ACHIEVEMENTS ================= */
+
+.mt-large {
+  margin-top: 80px;
+}
+
+.achievement-grid {
+  margin-top: 30px;
+  display: grid;
+
+  /* 👇 makes boxes longer */
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+
+  gap: 28px;
+}
+
+
+.achievement-card {
+  position: relative;
+  padding: 18px 20px 18px 42px;
+
+  background: rgba(255,255,255,0.04);
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: 0.35s ease;
+  line-height: 1.5;
+}
+
+/* glowing dot */
+.achievement-dot {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #00f5ff;
+  box-shadow: 0 0 12px rgba(0,245,255,0.8);
+}
+
+.achievement-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(124,124,255,0.3);
+  border-color: rgba(0,245,255,0.5);
+}
+
+/* ================= CONTACT SOCIAL LINKS ================= */
+
+.contact-socials {
+  margin-top: 35px;
+  display: flex;
+  gap: 20px;
+}
+
+.contact-socials a {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+
+  color: #eaeaff;
+  font-size: 1.2rem;
+
+  transition: 0.35s ease;
+}
+
+/* hover glow */
+.contact-socials a:hover {
+  transform: translateY(-6px);
+  color: #00f5ff;
+
+  box-shadow:
+    0 0 20px rgba(0,245,255,0.35),
+    0 0 35px rgba(124,124,255,0.4);
+
+  border-color: rgba(0,245,255,0.6);
+}
+
+/* mobile center */
+@media (max-width: 768px) {
+  .contact-socials {
+    justify-content: center;
+  }
+}
+
+/* ================= HERO SKILL TAGS (HOVER ONLY) ================= */
+
+.hero-skill-tags {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  font-size: 0.9rem;
+  color: #cfd3ff;
+
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+
+  transition: 0.35s ease;
+}
+
+/* show ONLY on profile hover */
+.hero-profile-wrapper:hover .hero-skill-tags {
+  opacity: 0.9;
+  transform: translateY(0);
+}
+
+/* dot separator */
+.hero-skill-tags span {
+  position: relative;
+  padding-right: 12px;
+}
+
+.hero-skill-tags span::after {
+  content: "•";
+  position: absolute;
+  right: 2px;
+  color: #00f5ff;
+}
+
+.hero-skill-tags span:last-child::after {
+  content: "";
+}
+
+/* subtle highlight */
+.hero-skill-tags span:hover {
+  color: #00f5ff;
+}
+
+/* MOBILE: always visible */
+@media (max-width: 768px) {
+  .hero-skill-tags {
+    opacity: 0.9;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}

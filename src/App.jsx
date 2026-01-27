@@ -5,8 +5,6 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
-import Education from "./components/Education";
-
 import "./styles/global.css";
 
 function App() {
@@ -15,7 +13,6 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Education />
       <Skills />
       <Projects />
       <Experience />
