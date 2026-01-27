@@ -36,8 +36,8 @@ export default function Contact() {
       </form>
 
       <div className="contact-socials">
-        <a href="https://github.com/harshhax" target="_blank"><FaGithub /></a>
-        <a href="https://www.linkedin.com/in/harshaax/" target="_blank"><FaLinkedinIn /></a>
+        <a href="https://github.com/harshhax" target="_blank" rel="noreferrer noopener"><FaGithub /></a>
+        <a href="https://www.linkedin.com/in/harshaax/" target="_blank" rel="noreferrer noopener"><FaLinkedinIn /></a>
         <a href="mailto:harsha.srithar@gmail.com"><FaEnvelope /></a>
       </div>
     </section>
