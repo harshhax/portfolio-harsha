@@ -6,7 +6,7 @@ export default function Projects() {
       title: "Fitness Application – Workflow & UI Design",
       date: "Dec 2024",
       tech: ["Figma", "UI/UX", "Prototyping"],
-      figma: "https://www.figma.com/file/XXXXXXXX",
+      figma: "https://www.figma.com/design/qp0of6fqv7Jcv32aOmwk7S/FITNESS-WEB-APP?t=LG4D9RSluC0AO2wR-1",
       description: [
         "Designed an end-to-end user workflow and high-fidelity UI screens for a fitness application.",
         "Focused on intuitive navigation, consistent user flows, and responsive design across devices."
@@ -16,7 +16,7 @@ export default function Projects() {
       title: "Education Platform for Rural Learning",
       date: "Sep 2025",
       tech: ["React.js", "Tailwind CSS", "Accessibility"],
-      github: "https://github.com/harshhax/rural-education-platform",
+      github: "https://github.com/harshhax/eduLearn",
       description: [
         "Developed a frontend education platform tailored for rural users with limited or unstable internet connectivity.",
         "Implemented online/offline indicators, video learning modules, and interactive quizzes."
@@ -26,7 +26,7 @@ export default function Projects() {
       title: "Micro-Donation Platform for Disaster Relief",
       date: "Nov 2025",
       tech: ["React.js", "TypeScript", "Tailwind CSS"],
-      github: "https://github.com/harshhax/micro-donation-platform",
+      github: "https://github.com/harshhax/prep360",
       description: [
         "Developed a responsive frontend platform to support secure micro-donations.",
         "Designed with encryption-focused architecture and inclusive access support."
